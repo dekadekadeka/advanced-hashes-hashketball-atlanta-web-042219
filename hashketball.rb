@@ -157,5 +157,6 @@ def big_shoe_rebounds
 end
 
 def get_shoe
+  player_hash = game_hash[:home][:players].merge(game_hash[:away][:players])
   player_hash.map {|player| player.fetch(:shoe) == shoe}
 end
