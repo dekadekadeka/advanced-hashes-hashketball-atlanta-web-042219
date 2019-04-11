@@ -143,6 +143,7 @@ end
 
 def player_numbers(team)
   teams = game_hash.values
+  binding.pry
   if teams.include?(team)
   end
 end
