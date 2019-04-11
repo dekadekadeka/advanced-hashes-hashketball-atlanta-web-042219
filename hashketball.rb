@@ -161,4 +161,4 @@ def big_shoe
   player_hash.max_by{|player, stats| stats.fetch(:shoe)}
 end
 
-big_shoe
+puts big_shoe
