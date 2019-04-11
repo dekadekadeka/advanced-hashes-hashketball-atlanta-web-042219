@@ -143,8 +143,8 @@ end
 
 def player_numbers(team)
   teams = game_hash.values
-  binding.pry
-  if teams.include?(team)
+  teams.find do |team|
+    team.fetch(:team_name) == team 
   end
 end
 
