@@ -158,7 +158,7 @@ end
 
 def big_shoe
   player_hash = game_hash[:home][:players].merge(game_hash[:away][:players])
-  player_hash.max_by{|player, stats| stats.fetch(:shoe)}
+  player_hash.max_by{|player, stats| stats.fetch(:shoe)}[1]
 end
 
 puts big_shoe
