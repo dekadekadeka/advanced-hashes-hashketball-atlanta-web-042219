@@ -158,7 +158,5 @@ end
 
 def get_shoe
   player_hash = game_hash[:home][:players].merge(game_hash[:away][:players])
-  player_hash.map {|player| player.fetch(:shoe) == shoe}
+  player_hash.max_by
 end
-
-get_shoe
