@@ -143,7 +143,8 @@ end
 
 def player_numbers(team_name)
   everything = game_hash.values
-  everything.find {|team| team.fetch(:team_name) == team_name}
+  teams = everything.find {|team| team.fetch(:team_name) == team_name}
+  teams[:players].map {|name, stats| stats[:number]}
 end
 
 def player_stats(name)
