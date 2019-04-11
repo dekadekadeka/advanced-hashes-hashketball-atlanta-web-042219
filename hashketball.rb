@@ -155,5 +155,5 @@ end
 def big_shoe_rebounds
   player_hash = game_hash[:home][:players].merge(game_hash[:away][:players])
   binding.pry
-  big_shoe = player_hash.map {|player| player.fetch(:shoe).to_i}
+  big_shoe = player_hash.map {|player| player.fetch(:shoe)}
 end
