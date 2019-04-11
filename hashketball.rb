@@ -141,7 +141,7 @@ def team_names
 [game_hash[:home][:team_name], game_hash[:away][:team_name]]
 end
 
-def player_numbers(team)
+def player_numbers(team_name)
   teams = game_hash.values
   teams.find do |team|
     team.fetch(:team_name) == team
