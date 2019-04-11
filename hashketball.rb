@@ -153,7 +153,7 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-big_shoe.fetch[:rebounds]
+big_shoe.fetch(:rebounds)
 end
 
 def big_shoe
