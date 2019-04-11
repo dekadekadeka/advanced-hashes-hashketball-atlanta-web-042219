@@ -144,7 +144,7 @@ end
 def player_numbers(team_name)
   teams = game_hash.values
   teams.find do |team|
-    team.fetch(:team_name) == team
+    team.fetch(:team_name) == team_name
   end
 end
 
