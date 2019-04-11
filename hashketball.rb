@@ -158,3 +158,4 @@ end
 
 def get_shoe
   player_hash.map {|player| player.fetch(:shoe) == shoe}
+end
